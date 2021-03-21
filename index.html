@@ -14,57 +14,83 @@
       integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
       crossorigin="anonymous"
     />
-    <title>Hit and Blow</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Word Quiz</title>
     <!-- <link rel="stylesheet" href="css/styles.css" /> -->
     <link rel="icon" href="船2.png" />
   </head>
   <body>
     <header style="background-color: beige; height: 8vh">
-      <h1>ヘッダー</h1>
+      <h1 class="text-center pt-3">早答え言葉ゲーム</h1>
     </header>
     <main style="background-color: blueviolet">
       <div class="container" style="height: 43vh">
         <div class="row pt-4">
-          <div class="col-12 bg-white text-center" style="height: 100px">
-            学校にあるもの
+          <div class="col-12 bg-white pt-3 text-center" style="height: 100px">
+            <p style="font-size: 8vw">学校にあるもの</p>
           </div>
         </div>
-        <div class="row">
-          <p class="text-center" style="font-size: 30px">あ</p>
+        <div class="row text-center" style="height: 400px">
+          <div class="col-12 bg-white pt-3 text-center" style="height: 200px">
+            <p style="font-size: 150px">あ</p>
+          </div>
         </div>
       </div>
       <div
         style="
-          height: 39vh;
+          height: 43vh;
           background-color: chartreuse;
           display: flex;
           flex-wrap: wrap-reverse;
           align-content: flex-start;
+          justify-content: space-around;
         "
       >
-        <div style="width: 50%; background-color: coral; height: 100px">
-          player
+        <div class="border player">
+          <p class="name" style="margin-bottom: 0">player</p>
+          <p class="point">10</p>
+          <div style="text-align: center">
+            <button type="button" class="btn btn-primary">Point</button>
+          </div>
         </div>
-        <div style="width: 50%; background-color: coral; height: 100px">
-          player
+        <div class="border player">
+          <p class="name" style="margin-bottom: 0">player</p>
+          <p class="point">10</p>
+          <div style="text-align: center">
+            <button type="button" class="btn btn-primary">Point</button>
+          </div>
         </div>
-        <div style="width: 50%; background-color: coral; height: 100px">
-          player
+        <div class="border player">
+          <p class="name" style="margin-bottom: 0">player</p>
+          <p class="point">10</p>
+          <div style="text-align: center">
+            <button type="button" class="btn btn-primary">Point</button>
+          </div>
         </div>
-        <div style="width: 50%; background-color: coral; height: 100px">
-          player
+        <div class="border player">
+          <p class="name" style="margin-bottom: 0">player</p>
+          <p class="point">10</p>
+          <div style="text-align: center">
+            <button type="button" class="btn btn-primary">Point</button>
+          </div>
         </div>
-        <div style="width: 50%; background-color: coral; height: 100px">
-          player
+        <div class="border player">
+          <p class="name" style="margin-bottom: 0">player</p>
+          <p class="point">10</p>
+          <div style="text-align: center">
+            <button type="button" class="btn btn-primary">Point</button>
+          </div>
         </div>
-        <div style="width: 50%; background-color: coral; height: 100px">
-          player
+        <div class="border player">
+          <p class="name" style="margin-bottom: 0">player</p>
+          <p class="point">10</p>
+          <div style="text-align: center">
+            <button type="button" class="btn btn-primary">Point</button>
+          </div>
         </div>
       </div>
     </main>
-    <footer style="background-color: brown; height: 10vh">
-      <h1>フッター</h1>
-    </footer>
+    <footer style="background-color: brown; height: 6vh"></footer>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

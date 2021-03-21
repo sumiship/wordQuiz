@@ -1,0 +1,16 @@
+.player {
+  width: 49%;
+  background-color: coral;
+  height: 110px;
+  padding: 3px;
+  margin-top: 3px;
+}
+
+.player p {
+  margin-bottom: 0;
+}
+
+.point {
+  text-align: center;
+  font-size: 27px;
+}
