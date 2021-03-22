@@ -21,21 +21,28 @@
   </head>
   <body>
     <header style="background-color: beige; height: 8vh">
-      <h1 class="text-center pt-1">早答え言葉ゲーム</h1>
+      <h1 id="theme" class="text-center pt-1" style="line-height: 8vh">
+        早答え言葉ゲーム
+      </h1>
     </header>
     <main style="background-color: blueviolet">
       <div class="container" style="height: 39vh">
-        <div class="row pt-4">
-          <div class="col-12 bg-white pt-3 text-center" style="height: 10vh">
-            <p style="font-size: 8vw; margin-bottom: 0">学校にあるもの</p>
+        <div class="row pt-4" style="height: 9vh">
+          <div class="col-12 bg-white text-center" style="height: 9vh">
+            <p style="font-size: 8vw; margin-bottom: 0">テーマ</p>
           </div>
         </div>
-        <div class="row text-center" style="height: 33vh">
+        <div class="row text-center" style="height: 30vh">
           <div
-            class="col-12 bg-white text-center"
+            class="col-4 offset-4 mt-4 bg-white text-center"
             style="height: 23vh; padding: 0"
           >
-            <p style="font-size: 130px">あ</p>
+            <p style="font-size: 130px">◯</p>
+          </div>
+          <div class="col-4 pt-5" style="background-color: darkgreen">
+            <button id="next" type="button" class="btn btn-warning">
+              Next
+            </button>
           </div>
         </div>
       </div>
