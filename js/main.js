@@ -14,7 +14,9 @@
   };
 
   document.getElementById("next").addEventListener("click", () => {
-    document.getElementById("next").disabled = true;
+    const bnext = document.getElementById("next");
+    bnext.disabled = true;
+    bnext.style.opacity = "0.4";
     theme();
     const setmaru = document.getElementById("moji");
     setmaru.innerHTML = "◯";
@@ -26,7 +28,8 @@
         clearTimeout(id);
         setmaru.style.fontSize = "150px";
         moji();
-        document.getElementById("next").disabled = false;
+        bnext.disabled = false;
+        bnext.style.opacity = "1";
       }
     };
     next();
