@@ -7,13 +7,35 @@
 
   var moji = function () {
     document.getElementById("moji").innerHTML = arrrandom(hiragana);
-    console.log("3");
+  };
+
+  const maru = function (i) {
+    document.getElementById;
   };
 
   document.getElementById("next").addEventListener("click", () => {
+    document.getElementById("next").disabled = true;
     theme();
-    document.getElementById("moji").innerHTML = "◯";
-    setTimeout("moji()", 2900);
+    const setmaru = document.getElementById("moji");
+    setmaru.innerHTML = "◯";
+    let count = 0;
+    const next = () => {
+      setmaru.style.fontSize = String(150 - count++) + "px";
+      var id = setTimeout(next, 10);
+      if (count > 150) {
+        clearTimeout(id);
+        setmaru.style.fontSize = "150px";
+        moji();
+        document.getElementById("next").disabled = false;
+      }
+    };
+    next();
+  });
+
+  document.getElementById("reset").addEventListener("click", () => {
+    for (let i = 1; i < 7; i++) {
+      document.getElementById("pp" + String(i)).innerHTML = "0";
+    }
   });
 
   const player = function (num) {

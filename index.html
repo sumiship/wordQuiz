@@ -20,10 +20,37 @@
     <link rel="icon" href="船2.png" />
   </head>
   <body>
-    <header style="background-color: beige; height: 8vh">
-      <h1 class="text-center pt-1" style="line-height: 8vh">
-        早答え言葉ゲーム
-      </h1>
+    <header class="container" style="background-color: beige; height: 8vh">
+      <div class="row">
+        <h1 class="col-9 text-center pt-1" style="line-height: 8vh">
+          早答え言葉ゲーム
+        </h1>
+        <div class="col-3 pt-3 dropdown">
+          <button
+            type="button"
+            id="dropdown1"
+            class="btn btn-secondary dropdown-toggle"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            ルール
+          </button>
+          <div
+            class="dropdown-menu dropdown-menu-right"
+            aria-labelledby="dropdown1"
+          >
+            <p class="dropdown-item" style="margin-bottom: 0">
+              ルールは二つ<br />
+              　1. テーマにあった言葉<br />
+              　2. 頭文字は表示されたひらがな<br />
+              Next: 次の問題<br />
+              Reset: ポイントをリセット<br />
+              ポイントはローカルルールで！！
+            </p>
+          </div>
+        </div>
+      </div>
     </header>
     <main style="background-color: blueviolet">
       <div class="container" style="height: 39vh">
@@ -34,14 +61,21 @@
         </div>
         <div class="row text-center" style="height: 30vh">
           <div
-            class="col-4 offset-4 mt-4 bg-white text-center"
-            style="height: 23vh; padding: 0"
+            class="col-6 offset-3 mt-4 bg-white text-center"
+            style="height: 23vh; padding: 0; line-height: 23vh"
           >
-            <p id="moji" style="font-size: 130px">◯</p>
+            <p id="moji" style="font-size: 150px">◯</p>
           </div>
-          <div class="col-4 pt-5">
+          <div class="col-3 pt-5">
             <button id="next" type="button" class="btn btn-warning">
               Next
+            </button>
+            <button
+              id="reset"
+              type="button"
+              class="btn btn-warning btn-outline-success mt-3"
+            >
+              Reset
             </button>
           </div>
         </div>
