@@ -110,6 +110,7 @@
     "生活必需品",
     "キャラクター",
     "食べ物",
+    "メーカー",
   ];
 
   const arrrandom = function (arr) {
